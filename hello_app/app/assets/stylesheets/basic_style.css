@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+    font-family: Verdana, sans-serif;
+    color: #242626;
+}
+
+h1, h2, h3 {
+    font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+h1 {
+    color: blue;
+}

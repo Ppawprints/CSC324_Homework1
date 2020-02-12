@@ -1,0 +1,9 @@
+require 'test_helper'
+
+class HomepageControllerTest < ActionDispatch::IntegrationTest
+  test "should get home" do
+    get /_url
+    assert_response :success
+  end
+
+end
