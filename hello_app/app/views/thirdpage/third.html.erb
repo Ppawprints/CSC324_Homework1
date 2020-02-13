@@ -1,3 +1,11 @@
-<h1>Thirdpage#third</h1>
-<p>Welcome to the third (and currently final) page of my website!<p>
-<p>Find me in app/views/thirdpage/third.html.erb</p>
+<% provide(:title, "Third Page") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %></title>
+  </head>
+  <body>
+    <h1>Title TBD</h1>
+    <p>Welcome to the third (and currently final) page of my website!</p>
+  </body>
+</html>
