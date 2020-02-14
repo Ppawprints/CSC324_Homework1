@@ -1,0 +1,6 @@
+//= link_tree ../images
+//= link_directory ../javascripts .js
+//= link_directory ../stylesheets .css
+https://docs.google.com/document/d/1Oh7p-_9M7L9RstDe59NllMMH7wwbu3ETjgqs0ZPPPio/edit?usp=sharing//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
