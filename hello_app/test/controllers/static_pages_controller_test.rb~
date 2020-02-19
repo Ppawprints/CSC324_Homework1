@@ -1,0 +1,21 @@
+require 'test_helper'
+
+class StaticPagesControllerTest < ActionDispatch::IntegrationTest
+  test "should get home" do
+    get static_pages_home_url
+    assert_response :success
+    assert_select "title", "Yilan's First Website"
+  end
+  
+  test "should get second" do
+    get static_pages_second_url
+    assert_response :success
+    assert_select "title", "Second Page | Yilan's First Website"
+  end
+
+  test "should get third" do
+    get static_pages_third_url
+    assert response :success
+    assert_select "title", "Third Page | Yilan's First Website"
+  end
+end

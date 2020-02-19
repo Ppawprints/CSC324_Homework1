@@ -6,7 +6,7 @@
     <%= stylesheet_link_tag    'application', media: 'all',
 	'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-        <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       </script>
       <![endif]-->
@@ -14,22 +14,21 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-	<a href="http://www.linkedin.com/in/yilan-dong">Click to view my LinkedIn Profile</a>
+	<li><%= link_to "Hello App", "#", id: "logo" %>
+      </div>
+      <div 
 	<nav>
 	  <ul class="nav navbar-nav navbar-right">
-	    <!--<li><%= link_to "Home", '#' %></li>-->
-	    <a href="https://csc324-project.herokuapp.com/">Home page of Yilan's Project </a>
-	    <a href="https://csc324-project.herokuapp.com/secondpage/second">Here's another page </a>
-	    <a href="https://csc324-project.herokuapp.com/thirdpage/third">Here's all that I have :/ </a>
-	    <!--<li><%= link_to "Second page", 'secondpage/second' %></li>-->
-	    <!--<li><%= link_to "Third Page", 'thirdpage/third' %></li>-->
+	    <li><%= link_to "Home Page", root_path %></li>
+	    <li><%= link_to "Second page", second_path %></li>
+	    <li><%= link_to "Third Page", third_path %></li>
 	  </ul>
 	</nav>
       </div>
     </header>
-    <div class="container">
+    <div class="centre jumbotron">
       <%= yield %>
     </div>
     <%= image_tag("kitten.jpg") %>
-  </body>
+</body>
 </html>

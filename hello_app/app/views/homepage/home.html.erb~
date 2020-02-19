@@ -1,6 +1,0 @@
-<h1>Yilan's Homepage for CSC324</h1>
-<p>my first attempt at making a web page ;( so far so tough.
-  <a href="https://www.csc324YilanD.org/">CSC324 Individual Project Home</a>
-<p>
-<p>Find me in app/views/homepage/home.html.erb</p>
-<%= stylesheet_link_tag "basic_style" %>
