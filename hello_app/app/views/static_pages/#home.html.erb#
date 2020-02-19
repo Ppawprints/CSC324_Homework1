@@ -2,7 +2,8 @@
 <html>
   <h1>Welcome to Yilan's Homepage for CSC324</h1>
   <h2>This is the first steps for Yilan's individual project.</h2>
+  <h2>Dice Result: %= @result %></p>
   <div class="center">
-    <p>my first attempt at making a web page ;( so far so tough.<p>
+       <p><%= link_to "Roll again", root_path %></p>
   </div>
-<html>
+</html>

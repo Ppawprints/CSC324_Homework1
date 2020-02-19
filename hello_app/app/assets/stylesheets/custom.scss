@@ -3,12 +3,14 @@
 
 /* mixins, variables, etc. */
 
-$gray-medium-light: #eaeaea;
+$dark-blue: #25849f;
 
 /* universal */
 
+
 body {
     padding-top: 60px;
+    background-color: #bce3ee
 }
 
 section {
@@ -17,6 +19,13 @@ section {
 
 textarea {
     resize: vertical;
+}
+
+.background-blue{
+    background-color: #84b8c6;
+}
+.background-dark{
+    background-color: CadetBlue;
 }
 
 .center {
