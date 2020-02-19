@@ -6,17 +6,19 @@
     <%= stylesheet_link_tag    'application', media: 'all',
 	'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/shim' %>
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       </script>
       <![endif]-->
   </head>
   <body>
+    <%= render 'layouts/header' %>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-	<li><%= link_to "Hello App", "#", id: "logo" %>
+	<li><a href="https://www.linkedin.com/in/yilan-dong-973152160", "application/hello", id: "logo" %>
       </div>
-      <div> 
+      <div 
 	<nav>
 	  <ul class="nav navbar-nav navbar-right">
 	    <li><%= link_to "Home Page", root_path %></li>
@@ -29,8 +31,6 @@
     <div class="centre jumbotron">
       <%= yield %>
     </div>
-    <div class="center img">
-      <%= image_tag("kitten.jpg") %>
-    </div>
+    <%= image_tag("kitten.jpg") %>
 </body>
 </html>
