@@ -8,9 +8,9 @@ class ApplicationControllerTest < ActionDispatch::IntegrationTest
     assert_select "header" do
       assert_select "nav" do
         assert_select "ul" do
-          assert_select "li", "Home Page"
-          assert_select "li", "Second Page"
-          assert_select "li", "Third Page"
+          assert_select "li", "Mixed Pics Page"
+          assert_select "li", "Cat Pics Page"
+          assert_select "li", "Dog Pics Page"
         end
       end   
     end
@@ -22,9 +22,9 @@ class ApplicationControllerTest < ActionDispatch::IntegrationTest
     assert_select "header" do
       assert_select "nav" do
         assert_select "ul" do
-          assert_select "li", "Home Page"
-          assert_select "li", "Second Page"
-          assert_select "li", "Third Page"
+          assert_select "li", "Mixed Pics Page"
+          assert_select "li", "Cat Pics Page"
+          assert_select "li", "Dog Pics Page"
         end
       end
     end
@@ -36,9 +36,9 @@ class ApplicationControllerTest < ActionDispatch::IntegrationTest
     assert_select "header" do
       assert_select "nav" do
         assert_select "ul" do
-          assert_select "li", "Home Page"
-          assert_select "li", "Second Page"
-          assert_select "li", "Third Page"
+          assert_select "li", "Mixed Pics Page"
+          assert_select "li", "Cat Pics Page"
+          assert_select "li", "Dog Pics Page"
         end
       end
     end

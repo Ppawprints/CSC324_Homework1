@@ -1,13 +1,16 @@
-<% provide(:title, "Second Page") %>
+<% provide(:title, "Cat Pics Page") %>
 <!DOCTYPE html>
 <html>
   <head>
     <title><%= yield(:title) %></title>
   </head>
   <body>
-    <h1>Second Page !</h1>
+    <h1>Random cat pictures here!</h1>
     <div class="center">
-      <p>Welcome to page 2 of my static website!</p>
+      <h1><%= @result_cat %></h1>
+      <p><%= link_to "New Cat Pic", second_path %></p>
+      <p><%= link_to "New Dog Pic", third_path %></p>
+      <p><%= link_to "New Mixed Pic", root_path %></p>
     </div>
   </body>
 </html>
