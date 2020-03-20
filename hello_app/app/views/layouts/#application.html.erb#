@@ -30,7 +30,7 @@
       <%= yield %>
     </div>
     <div class="center img">
-      <%= image_tag("footer.png") %>
+      <%= image_tag("13.jpg") %>
     </div>
-</body>
+  </body>
 </html>

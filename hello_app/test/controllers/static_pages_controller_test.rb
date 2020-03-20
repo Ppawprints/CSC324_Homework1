@@ -23,21 +23,21 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get root die value" do
     get root_path
     assert_response :success
-    assert (assigns(:result_mixed)) <= 20
-    assert (assigns(:result_mixed)) >= 1
+    assert (assigns(:id)) <= 20
+    assert (assigns(:id)) >= 1
   end  
 
   test "should get second die value" do
     get second_path
     assert_response :success
-    assert (assigns(:result_cat)) <= 10
-    assert (assigns(:result_cat)) >= 1
+    assert (assigns(:id)) <= 10
+    assert (assigns(:id)) >= 1
   end  
 
   test "should get third die value" do
     get third_path
     assert_response :success
-    assert (assigns(:result_dog)) <= 20
-    assert (assigns(:result_dog)) >= 11
+    assert (assigns(:id)) <= 20
+    assert (assigns(:id)) >= 11
   end  
 end

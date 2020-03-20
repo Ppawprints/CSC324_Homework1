@@ -7,12 +7,9 @@
       <%= image_tag(@path) %>
     </div>
     <div class="column right">
-      <!--button class="button" onclick="document.location=root_path">
-	New Mixed Pic
-      </button-->
       <p><%= link_to "New Mixed Pic", root_path %></p>
       <p><%= link_to "New Cat Pic", second_path %></p>
       <p><%= link_to "New Dog Pic", third_path %></p>
     </div>
   </div>
-</html>
+https://unsplash.com/s/photos/dogs</html>

@@ -8,9 +8,9 @@ class ApplicationControllerTest < ActionDispatch::IntegrationTest
     assert_select "header" do
       assert_select "nav" do
         assert_select "ul" do
-          assert_select "li", "Mixed Pics Page"
-          assert_select "li", "Cat Pics Page"
-          assert_select "li", "Dog Pics Page"
+          assert_select "li", "Home Page"
+          assert_select "li", "Second Page"
+          assert_select "li", "Third Page"
         end
       end   
     end
@@ -22,9 +22,9 @@ class ApplicationControllerTest < ActionDispatch::IntegrationTest
     assert_select "header" do
       assert_select "nav" do
         assert_select "ul" do
-          assert_select "li", "Mixed Pics Page"
-          assert_select "li", "Cat Pics Page"
-          assert_select "li", "Dog Pics Page"
+          assert_select "li", "Home Page"
+          assert_select "li", "Second Page"
+          assert_select "li", "Third Page"
         end
       end
     end
@@ -36,45 +36,16 @@ class ApplicationControllerTest < ActionDispatch::IntegrationTest
     assert_select "header" do
       assert_select "nav" do
         assert_select "ul" do
-          assert_select "li", "Mixed Pics Page"
-          assert_select "li", "Cat Pics Page"
-          assert_select "li", "Dog Pics Page"
+          assert_select "li", "Home Page"
+          assert_select "li", "Second Page"
+          assert_select "li", "Third Page"
         end
       end
     end
   end
 
-
-  test "should get navbar url from home" do
+  test "should get navbar url" do
     get root_path
-    assert_response :success
-    assert_select "header" do
-      assert_select "nav" do
-        assert_select "ul" do
-          assert_select "a[href=?]", root_path
-          assert_select "a[href=?]", second_path
-          assert_select "a[href=?]", third_path
-        end
-      end
-    end
-  end
-
-  test "should get navbar url from second" do
-    get second_path
-    assert_response :success
-    assert_select "header" do
-      assert_select "nav" do
-        assert_select "ul" do
-          assert_select "a[href=?]", root_path
-          assert_select "a[href=?]", second_path
-          assert_select "a[href=?]", third_path
-        end
-      end
-    end
-  end
-
-  test "should get navbar url from third" do
-    get third_path
     assert_response :success
     assert_select "header" do
       assert_select "nav" do

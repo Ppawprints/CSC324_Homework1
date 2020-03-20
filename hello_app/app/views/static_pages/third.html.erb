@@ -4,13 +4,15 @@
   <head>
     <title><%= yield(:title) %></title>
   </head>
-  <body>
-    <h1>Welcome to the page of random dog pictures.</h1>
-    <div class="center">
-      <h1><%= @result_dog %></h1>
+  <h1>Welcome to the page of random dog pictures.</h1>
+  <div class="row">
+    <div class="column left center img">
+      <%= image_tag(@path) %>
+    </div>
+    <div class="column right">
       <p><%= link_to "New Dog Pic", third_path %></p>
       <p><%= link_to "New Cat Pic", second_path %></p>
       <p><%= link_to "New Mixed Pic", root_path %></p>
     </div>
-  </body>
+  </div>
 </html>

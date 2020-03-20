@@ -1,11 +1,14 @@
 class StaticPagesController < ApplicationController
   def home
-    @result_mixed = (1..20).to_a.shuffle.first
+    @id = (1..20).to_a.shuffle.first
+    @path = Pic.find(@id).picInfo
   end
   def second
-    @result_cat = (1..10).to_a.shuffle.first
+    @id = (1..10).to_a.shuffle.first
+    @path = Pic.find(@id).picInfo
   end
   def third
-    @result_dog = (11..20).to_a.shuffle.first
+    @id = (11..20).to_a.shuffle.first
+    @path = Pic.find(@id).picInfo
   end
 end
