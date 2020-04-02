@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pics/new'
+
   get 'users/new'
 
   get '/third', to: "static_pages#third"
@@ -7,4 +9,7 @@ Rails.application.routes.draw do
   root "static_pages#home"
   get '/application/hello'
   get '/signup', to: "users#new"
+  post '/signup',  to: "users#create"
+  resources :users
+  resources :pics
 end

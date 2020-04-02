@@ -1,0 +1,12 @@
+<% provide(:title, @pic.id) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="pic_info">
+      <h3>
+	<%= image_tag(@pic.picInfo) %>
+	<%= @pic.animalType %>
+	<%= @pic.likes %>
+      </h3>
+    </section>
+  </aside>
+</div>

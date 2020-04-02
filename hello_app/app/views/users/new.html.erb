@@ -1,3 +1,30 @@
-<% provide(:title, 'Preferences') %>
-<h1>Cats or dogs?</h1>
-<p>This will be a page for users to enter preferences on cats or dogs.</p>
+<% provide(:title, 'Sign up') %>
+<h1>Sign up</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user, url: signup_path) do |f| %>
+    <%= render 'shared/error_messages' %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+    
+    <%= f.label :email %>
+    <%= f.email_field :email, class: 'form-control' %>
+
+    <%= f.label :animalPreference, "Animal Preference" %>
+    <%= f.select :animalPreference, options_for_select(["Select One", "cat", "dog", "either/neither"]), class: 'genForm_dropBox' %>
+    
+    <%= f.label :numberPreference, "Favorite Number (Please enter your favorite integer between 1 and 20!)" %> 
+    <%= f.select :numberPreference, options_for_select([["Select One", ""], "1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","6","17","18","19","20"]), :class => 'genForm_dropBox' %>
+
+    <%= f.label :password %>
+    <%= f.password_field :password, class: 'form-control' %>
+
+    <%= f.label :password_confirmation, "Password Confirmation" %>
+    <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+    <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

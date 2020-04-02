@@ -1,0 +1,6 @@
+class Pic < ApplicationRecord
+  validates(:animalType, presence: true)
+  validates(:picInfo, presence: true)
+
+  validates(:picInfo, presence: true, format: {with: VALID_PIC_REGEX})
+end
