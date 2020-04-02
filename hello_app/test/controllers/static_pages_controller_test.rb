@@ -20,13 +20,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "Dog Pics Page | AnimalPics"
   end
 
-  test "should get root die value" do
-    get root_path
-    assert_response :success
-    assert (assigns(:id)) <= 20
-    assert (assigns(:id)) >= 1
-  end  
-
   test "should get second die value" do
     get second_path
     assert_response :success

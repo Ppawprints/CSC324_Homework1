@@ -2,17 +2,7 @@
 <html>
   <h1>Welcome to AnimalPics!</h1>
   <h2>Here you can view random pictures of cute cats and dogs.</h2>
-  <div class="row">
-    <div class="column left center img">
-      <%= image_tag(@path) %>
-    </div>
-    <div class="column right">
-      <!--button class="button" onclick="document.location=root_path">
-	New Mixed Pic
-      </button-->
-      <p><%= link_to "New Mixed Pic", root_path %></p>
-      <p><%= link_to "New Cat Pic", second_path %></p>
-      <p><%= link_to "New Dog Pic", third_path %></p>
-    </div>
+  <div class="center">
+    <%= link_to "Enter your preferences now!", signup_path, class: "btn btn-lg btn-primary" %>
   </div>
 </html>

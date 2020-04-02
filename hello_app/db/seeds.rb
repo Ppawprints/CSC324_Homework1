@@ -1,83 +1,102 @@
-Pic.destroy_all
 Pic.create!([{
                animalType: "cat",
-               picInfo: "1.jpg"
+               picInfo: "1.jpg",
+               likes: 0
              },
              {
                animalType: "cat",
-               picInfo: "2.jpg"
+               picInfo: "2.jpg",
+               likes: 0
              },
              {
                animalType: "cat",
-               picInfo: "3.jpg"
+               picInfo: "3.jpg",
+               likes: 0
              },
              {
                animalType: "cat",
-               picInfo: "4.jpg"
+               picInfo: "4.jpg",
+               likes: 0
              },
              {
                animalType: "cat",
-               picInfo: "5.jpg"
+               picInfo: "5.jpg",
+               likes: 0
              },
              {
                animalType: "cat",
-               picInfo: "6.jpg"
+               picInfo: "6.jpg",
+               likes: 0
              },
              {
                animalType: "cat",
-               picInfo: "7.jpg"
+               picInfo: "7.jpg",
+               likes: 0
              },
              {
                animalType: "cat",
-               picInfo: "8.jpg"
+               picInfo: "8.jpg",
+               likes: 0
              },
              {
                animalType: "cat",
-               picInfo: "9.jpg"
+               picInfo: "9.jpg",
+               likes: 0
              },
              {
                animalType: "cat",
-               picInfo: "10.jpg"
+               picInfo: "10.jpg",
+               likes: 0
              },
              {
                animalType: "dog",
-               picInfo: "11.jpg"
+               picInfo: "11.jpg",
+               likes: 0
              },
              {
                animalType: "dog",
-               picInfo: "12.jpg"
+               picInfo: "12.jpg",
+               likes: 0
              },
              {
                animalType: "dog",
-               picInfo: "13.jpg"
+               picInfo: "13.jpg",
+               likes: 0
              },
              {
                animalType: "dog",
-               picInfo: "14.jpg"
+               picInfo: "14.jpg",
+               likes: 0
              },
              {
                animalType: "dog",
-               picInfo: "15.jpg"
+               picInfo: "15.jpg",
+               likes: 0
              },
              {
                animalType: "dog",
-               picInfo: "16.jpg"
+               picInfo: "16.jpg",
+               likes: 0
              },
              {
                animalType: "dog",
-               picInfo: "17.jpg"
+               picInfo: "17.jpg",
+               likes: 0
              },
              {
                animalType: "dog",
-               picInfo: "18.jpg"
+               picInfo: "18.jpg",
+               likes: 0
              },
              {
                animalType: "dog",
-               picInfo: "19.jpg"
+               picInfo: "19.jpg",
+               likes: 0
              },
              {
                animalType: "dog",
-               picInfo: "20.jpg"
+               picInfo: "20.jpg",
+               likes: 0
              }])
 
 p "Created #{Pic.count} pictures."

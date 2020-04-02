@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   get '/third', to: "static_pages#third"
   get '/second', to: "static_pages#second"
   get 'static_pages/home'
   root "static_pages#home"
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/application/hello'
+  get '/signup', to: "users#new"
 end

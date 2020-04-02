@@ -19,18 +19,23 @@
       <div> 
 	<nav>
 	  <ul class="nav navbar-nav navbar-right">
-	    <li><%= link_to "Mixed Pics Page", root_path %></li>
+	    <li><%= link_to "Home", root_path %></li>
 	    <li><%= link_to "Cat Pics Page", second_path %></li>
 	    <li><%= link_to "Dog Pics Page", third_path %></li>
 	  </ul>
 	</nav>
       </div>
     </header>
-    <div class="centre jumbotron background-blue">
-      <%= yield %>
+    <div class="centre jumbotron jumbotron-fluid background-blue">
+      <div class="container">
+	<%= yield %>
+      </div>
     </div>
     <div class="center img">
       <%= image_tag("footer.png") %>
+    </div>
+    <div class="container">
+      <%= debug(params) if Rails.env.development? %>
     </div>
 </body>
 </html>
