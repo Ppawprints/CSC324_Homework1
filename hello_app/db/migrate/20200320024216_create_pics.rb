@@ -4,7 +4,7 @@ class CreatePics < ActiveRecord::Migration[5.1]
       t.string :animalType
       t.string :picInfo
       t.integer :likes
-                            
+      
       t.timestamps
     end
   end
