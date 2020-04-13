@@ -1,8 +1,10 @@
-ra<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <h1>Welcome to AnimalPics!</h1>
   <h2>Here you can view random pictures of cute cats and dogs.</h2>
   <div class="center">
-    <%= link_to "Enter your preferences now!", signup_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Sign up and enter your preferences now!", signup_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Returning? Click here to login inow!", signup_path, class: "btn btn-lg btn-primary" %>
   </div>
+
 </html>
