@@ -9,8 +9,6 @@ class ApplicationControllerTest < ActionDispatch::IntegrationTest
       assert_select "nav" do
         assert_select "ul" do
           assert_select "li", "Home"
-          assert_select "li", "Cat Pics Page"
-          assert_select "li", "Dog Pics Page"
         end
       end   
     end
@@ -23,8 +21,6 @@ class ApplicationControllerTest < ActionDispatch::IntegrationTest
       assert_select "nav" do
         assert_select "ul" do
           assert_select "a[href=?]", root_path
-          assert_select "a[href=?]", second_path
-          assert_select "a[href=?]", third_path
         end
       end
     end

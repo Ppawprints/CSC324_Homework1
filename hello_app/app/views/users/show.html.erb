@@ -7,9 +7,15 @@
 	<%= @user.name %>
       </h1>
       <h3>
-	You have been paired with this <%= @pic.animalType %> !
+	You have been paired with this <%= @animalType %> !
       </h3>
     </section>
   </aside>
-  <%= image_tag(@pic.picInfo) %>
+  <div class="column right">
+    <%= image_tag(@picInfo) %>
+    <p></p>
+    <%= link_to "Click here to pictures of other cats", second_path, class: "btn btn-lg btn-primary"%>
+    <p></p>
+    <%= link_to "Click here to view pictures of other dogs", third_path, class: "btn btn-lg btn-primary"%>
+  </div>
 </div>
