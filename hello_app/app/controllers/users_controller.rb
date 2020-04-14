@@ -4,18 +4,22 @@ class UsersController < ApplicationController
     @ani_pref = @user.animalPreference
     @num_pref = @user.numberPreference.to_i
     if (@ani_pref == "cat")
-      @picInfo = @num_pref % 10 + 1
+      @num_pref = @num_pref % 10 + 1
+      @picInfo = (@num_pref).to_s + ".jpg"
+      @animalType = "cat"
     elsif (@ani_pref == "dog")
+      @animalType = "gos"
       if (@num_pref < 10)
-        @picInfo = @num_pref + 10
+        @num_pref = @num_pref + 10
+        @picInfo = @num_pref.to_s + ".jpg"
       end
     else 
-      @picInfo = @num_pref
-    end
-    if (@picInfo <= 10)
-      @animal_type = "cat"
-    else
-      @animal_type = "dog"
+      @picInfo = @num_pref.to_s + ".jpg"
+      if (@num_pref <= 10)
+        @animal_type = "cat"
+      else
+        @animal_type = "dog"
+      end
     end
   end
   

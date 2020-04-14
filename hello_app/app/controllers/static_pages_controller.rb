@@ -2,9 +2,11 @@ class StaticPagesController < ApplicationController
   def home
   end
   def second
-    @path = (1..10).to_a.shuffle.first
+    @picId = (1..10).to_a.shuffle.first
+    @path = @picId.to_s + ".jpg"
   end
   def third
-    @path = (11..20).to_a.shuffle.first
+    @picId = (11..20).to_a.shuffle.first
+    @path = @picId.to_s + ".jpg"
   end
 end
