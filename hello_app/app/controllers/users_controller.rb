@@ -8,7 +8,7 @@ class UsersController < ApplicationController
       @picInfo = (@num_pref).to_s + ".jpg"
       @animalType = "cat"
     elsif (@ani_pref == "dog")
-      @animalType = "gos"
+      @animalType = "dog"
       if (@num_pref < 10)
         @num_pref = @num_pref + 10
         @picInfo = @num_pref.to_s + ".jpg"
