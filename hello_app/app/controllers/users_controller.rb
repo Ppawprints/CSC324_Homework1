@@ -11,8 +11,8 @@ class UsersController < ApplicationController
       @animalType = "dog"
       if (@num_pref < 10)
         @num_pref = @num_pref + 10
-        @picInfo = @num_pref.to_s + ".jpg"
       end
+        @picInfo = @num_pref.to_s + ".jpg"
     else 
       @picInfo = @num_pref.to_s + ".jpg"
       if (@num_pref <= 10)
