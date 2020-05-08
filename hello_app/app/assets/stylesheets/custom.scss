@@ -75,6 +75,11 @@ p {
     line-height: 1.7em;
 }
 
+p1 {
+    text-indent: 50px;
+    text-align: justified;
+    letter-spacing: 1.5px;
+}  
 /* header */
 
 #logo {
@@ -102,11 +107,11 @@ p {
 }
 
 .left {
-    width: 70%;
+    width: 55%;
 }
 
 .right {
-    width: 30%;
+    width: 45%;
 }
 
 /* footer */
