@@ -1,0 +1,23 @@
+<% provide(:title, "About Yilan") %>
+<!DOCTYPE html>
+<html>
+  <div class="row">
+    <div class="row">
+      <div class="column left center img">
+	<h3>Hi, I am Yilan!</h3>
+	<%= image_tag("yilan.jpg", alt: "a picture of Yilan") %>
+      </div>
+      <div class="column right">
+	<div>
+	  <p1><br>Thank you for visiting my website!
+	    <br><br> A little about me:
+	    <br>I am a third-year Computer Science and French major at Grinnell College, and this website is an individual project for a class I took in spring 2020, CSC 324: Software Development and Design.
+	    <br><br>About my website:
+	    <br>This site contains a consistent header, footer. The color scheme as well as fonts are carefully chosen to be consistent with the style of the website, all of which demonstrates my front-end development skills – the use of HTML and CSS. The site provides login / signup functionalities, and provides exclusive contents for users with an account. The user information is stored in a database, while the sensitive information is kept secure and away from the developer, demonstrating my ability with databases using Ruby on Rails. Upon signup, each user is paired with a pet matching their preferences. Users that are logged in also have access randomized pet images, showingmy ability to write basic Ruby code.
+	    <br><br>For more about me, visit my <%= link_to "LinkedIn", 'https://www.linkedin.com/in/yilan-dong-973152160/' %>, or my <%= link_to "facebook", 'https://www.facebook.com/yilan.dong.7' %>.
+	  </p1>
+	</div>
+      </div>
+    </div>
+  </div>
+</html>
